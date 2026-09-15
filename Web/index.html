@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Execute e explore seis algoritmos com entradas personalizadas: primo, somatório, Fibonacci, MDC, QuickSort e contagem.">
+  <title>Laboratório de Algoritmos</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="algoritmos.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-icon">a<span>_</span></span> laboratório<span class="brand-light">/ algoritmos</span></a><a href="/instrucoes" class="download">Instruções</a></header>
+  <main>
+    <div class="intro"><p class="eyebrow">TRABALHO DE ALGORITMOS · INTERFACE WEB</p><h1>Do código ao resultado<span>.</span></h1><p>Escolha um algoritmo, altere os valores e execute.</p></div>
+    <div class="workspace">
+      <aside><div class="nav-heading">ALGORITMOS <span>06</span></div><nav id="algorithms" aria-label="Escolher algoritmo"></nav><div class="aside-note"><span class="note-symbol">{ }</span><p>Java + JavaScript</p><small>Java executa no servidor local. JavaScript executa no navegador.</small></div></aside>
+      <section class="work-panel" aria-labelledby="algorithm-title">
+        <div class="panel-heading"><div><p id="category" class="eyebrow"></p><h2 id="algorithm-title"></h2></div><span id="algorithm-mark" aria-hidden="true"></span></div>
+        <p id="description" class="description"></p>
+        <fieldset class="language-picker"><legend>Linguagem de execução</legend><label><input type="radio" name="language" value="javascript" checked> JavaScript <small>no navegador</small></label><label><input type="radio" name="language" value="java"> Java <small>no servidor local</small></label></fieldset><p id="runtime-note">JavaScript selecionado: execução no navegador.</p><div class="execution-grid"><form id="algorithm-form" novalidate><h3><span>01</span> Entrada</h3><div id="fields"></div><p id="error" role="alert"></p><div class="actions"><button type="submit" class="primary">Executar algoritmo <span aria-hidden="true">→</span></button><button type="button" id="example" class="secondary">Usar exemplo</button></div></form>
+        <section class="output" aria-label="Resultado" aria-live="polite" aria-atomic="true"><div class="output-heading"><h3><span>02</span> Resultado</h3><span id="status">EXEMPLO</span></div><div id="result"></div><p id="result-detail"></p></section></div>
+        <details id="source"><summary>Ver código do algoritmo <span aria-hidden="true">{ }</span></summary><pre><code id="code"></code></pre></details>
+      </section>
+    </div>
+    <footer><span>Laboratório de Algoritmos <span class="footer-sep">/</span> Cristian Henrique</span><a href="https://github.com/cristian160/Entreg-vel-1---Algoritmos" target="_blank" rel="noopener noreferrer">Repositório original ↗</a></footer>
+  </main>
+</body>
+</html>
